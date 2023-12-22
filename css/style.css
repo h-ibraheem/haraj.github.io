@@ -9,18 +9,17 @@
 }
 
 /* start header */
-.header .header-menu ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.header .header-menu ul li{
-    color: var(--grey-color);
-    margin:0 15px;
-    font-size: 14px;
-
+.header .boxs{
+    min-height: 40px;
+    flex: 1;
+    width: 100%;
 }
 
+@media (max-width:767px) {
+    .header .boxs{
+        overflow-x: scroll;
+    }
+}
 .header nav{
     
     background-color: var(--blue-color);
@@ -51,10 +50,13 @@
     border-radius: 6px;
 }
 
-.header nav .tools-menu .moon i{
+.header .arrow .container i{
+    width: 100%;
     display: flex;
-    align-items: center;
-    font-size: 20px;
+    justify-content: flex-end;
+    font-size: 40px;
+    padding: 20px ;
+    
 }
 
 
