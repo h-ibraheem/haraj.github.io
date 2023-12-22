@@ -211,7 +211,7 @@ body{
 }
 
 .commission .card-head p{
-    color: var(--green-color);
+    color: var(--blue-color);
 }
 
 .commission .card .card-body{
@@ -444,3 +444,68 @@ body{
     margin-bottom: 0;
 }
 /* end bank account */
+
+/* start transfer form */
+.transfer-form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.transfer-form .title h2{
+    color: #0b6eb9;
+
+}
+.transfer-form .title p{
+    color: #bbb;
+    margin-top: 5px;
+}
+
+.transfer-form .form-det{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 10px;
+    text-align: left;
+}
+.transfer-form .form-det div{
+    margin-bottom: 10px;
+}
+.transfer-form .form-det label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.transfer-form .form-det input,
+.transfer-form .form-det select{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: var(--blue-alt-color);
+
+}
+
+.transfer-form small{
+    color: #aaa;
+    display: block;
+}
+
+.transfer-form form .btn{
+    padding: 10px 100px;
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.transfer-form a{
+    color: #aaa;
+    text-decoration: underline;
+}
+
+/* End transfer form */
