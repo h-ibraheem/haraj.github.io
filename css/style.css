@@ -175,7 +175,7 @@ body{
 }
 .commission .card{
     border-radius: 17px;
-   padding: 60px 30px;
+   padding: 40px 30px;
 }
 
 .commission .card-head{
@@ -199,7 +199,7 @@ body{
     color: white;
     padding: 8px;
     background-color:var(--blue-color);
-    border: 15px solid   #82c1f189;
+    border: 15px solid   #9adcff;
     
 }
 
@@ -228,7 +228,112 @@ body{
     font-size: 14px;
     font-weight: 300;
 }
-
-
-
 /* end commission */
+
+/* start participate */
+.participate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.participate i{
+    font-size: 25px;
+    padding: 16px;
+    border-radius: 50%;
+    color: var(--blue-color);
+    background-color: #82c1f189;
+}
+
+.participate a {
+
+    display: flex;
+    color: white;
+    background-color: var(--blue-color);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+   
+}
+
+
+/* end participate */
+
+/* start calc commission */
+.calc .title{
+  color: #0b6eb9;
+}
+
+.calc form .price label{
+    position: absolute;
+    left: 10px;
+
+}
+.calc form div{
+    border: 1px solid #ddd;
+    width: 30%;
+    margin: 20px auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calc form .price input{
+    width: 200px;
+    text-align: center;
+    padding-left: 100px;
+    outline: none;
+    border: none;
+}
+
+
+.calc form .total{
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+
+.calc form .total input{
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    width: 100px;
+
+}
+
+.calc .pay-option img{
+    width: 50px;
+}
+
+.calc p span{
+    color: var(--blue-alt-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.calc .c-green i{
+    background-color: var(--green-color);
+    color: white;
+    padding:5px 10px;
+    border-radius: 25px;
+}
+
+.calc .pay-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--green-color);
+    border-radius: 17px ;
+    width: 400px;
+    margin: 5px auto;
+    padding: 5px;
+
+}
+/* end  calc commission */
