@@ -4,26 +4,29 @@
     --background-color: #F2F4FA;
     --fill-color: #E6F4FF;
     --orange-color: #FDC97C;
-    --green-color: #21B984;
-    --grey-color: #919191;
+    --green-color: #2ca67b;
+    --gray-color: #919191;
 }
 
+body{
+    background-color:#f2f4fa;
+}
 /* start header */
+.header .container{
+    overflow-x: auto;
+}
 .header .boxs{
-    min-height: 40px;
+    min-width: 1000px;
+    min-height: 50px;
     flex: 1;
     width: 100%;
+    color: var(--gray-color);
 }
 
-@media (max-width:767px) {
-    .header .boxs{
-        overflow-x: scroll;
-    }
-}
 .header nav{
-    
     background-color: var(--blue-color);
     color: white;
+    width: 100%;
 }
 
 .header nav .container{
@@ -36,11 +39,17 @@
     height: 40px;
 
 }
+@media (max-width:767px) {
+  .header nav .logo img{
+    height: 25px;
+  }
+}
+
 
 .header nav .tools-menu{
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
 }
 .header nav .tools-menu div{
     background-color: var(--blue-alt-color);
@@ -48,6 +57,12 @@
     min-width: 40px;
     margin: 5px ;
     border-radius: 6px;
+}
+
+@media (max-width:767px) {
+ .header nav .tools-menu .lang i{
+    display: none;
+ } 
 }
 
 .header .arrow .container i{
@@ -61,3 +76,103 @@
 
 
 /* end header */
+
+/* start welcome */
+.welcome {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 30px;
+}
+
+.welcome .content{
+    margin-top: 50px;
+}
+
+.welcome .content h2{
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 400px;
+    line-height: 1.5;
+}
+.welcome .content p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2;
+}
+
+@media (max-width:767px) {
+  .welcome .content h2,
+  .welcome .content p{
+    max-width: 100%;
+    
+  }
+  .welcome .content p{
+    text-align: left;
+  }
+}
+
+.welcome .content a{
+    display: flex;
+    color: white;
+    background-color: var(--blue-color);
+    padding: 5px 100px;
+    text-align: center;
+    border-radius: 5px;
+    width: 120px;
+    margin: 30px 0;
+
+}
+
+@media (max-width:767px) {
+
+  .welcome .content a{
+    margin: 20px auto;
+  }
+}
+
+.welcome .content a i{
+    margin-left: 10px;
+}
+
+
+.welcome .pay img{
+    height: 40px;
+    margin: 0 10px;
+}
+
+.welcome .image {
+       display: flex;
+    align-items: centter;
+    justify-content: center;
+}
+.welcome .image img{
+   width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 10px solid #fff;
+    border-radius: 17px;
+
+ 
+}
+
+@media (max-width:767px) {
+    .welcome .image img{
+        height: 400px;
+
+    }
+}
+/* end welcome */
+
+/* start services */
+.services {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+
+}
+
+.services .card{
+    border-radius: 17px;
+}
+
+/* end services */
