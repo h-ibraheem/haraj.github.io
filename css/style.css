@@ -4,7 +4,7 @@
     --background-color: #F2F4FA;
     --fill-color: #E6F4FF;
     --orange-color: #FDC97C;
-    --green-color: #2ca67b;
+    --green-color: #21966d;
     --gray-color: #919191;
 }
 
@@ -164,15 +164,71 @@ body{
 }
 /* end welcome */
 
-/* start services */
-.services {
+/* start commission */
+.commission {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 20px;
 
 }
-
-.services .card{
+.commission p{
+    margin: 0;
+}
+.commission .card{
     border-radius: 17px;
+   padding: 60px 30px;
 }
 
-/* end services */
+.commission .card-head{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.commission .card-head i{
+    font-size: 30px;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.commission .card-head .car{
+    color: var(--blue-color);
+    background-color: #82c1f189;
+}
+
+.commission .card-head .dots{
+    color: white;
+    padding: 8px;
+    background-color:var(--blue-color);
+    border: 15px solid   #82c1f189;
+    
+}
+
+.commission .card-head p{
+    color: var(--green-color);
+}
+
+.commission .card .card-body{
+    margin: 10px;
+}
+.commission .card .card-body p{
+ font-size: 14px;
+ font-weight: 300;
+ line-height: 1.8;
+
+}
+
+.commission .card .card-body ul{
+    list-style:outside;
+}
+
+
+.commission .card .card-body ul li{
+    margin: 10px 0;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+
+/* end commission */
